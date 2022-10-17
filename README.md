@@ -11,4 +11,4 @@ i
 - Handling the flag characters
 - Handling field width
 - Handling precision
-- Handling the length modifiers
+- Handling the length modifiers .
