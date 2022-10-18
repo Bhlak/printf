@@ -17,9 +17,7 @@ int _printf(const char *format, ...)
 	for (count = 0; *(format + count) != '\0'; count++)
 	{
 		if (format[count] == '%')
-		{
 			flag = 1;
-		}
 		else if (flag == 1)
 		{
 			flag = 0;
