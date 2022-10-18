@@ -7,6 +7,6 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_string(char *s);
-int print_integer(int i);
+int print_integer(long int i);
 
 #endif
