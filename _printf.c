@@ -9,13 +9,12 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int total = 0, flag, count = 0;
+	int total = 0, flag, count;
 
 	if (format == NULL)
 		return (0);
-
 	va_start(args, format);
-	while (*(format + count))
+	for (count = 0; *(format + count) != '\0'; count++)
 	{
 		if (format[count] == '%')
 		{
@@ -48,7 +47,6 @@ int _printf(const char *format, ...)
 			_putchar(format[count]);
 			total += 1;
 		}
-		count++;
 	}
 	va_end(args);
 	return (total);
