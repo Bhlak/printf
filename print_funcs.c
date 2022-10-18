@@ -18,6 +18,8 @@ int print_string(char *s)
 			count++;
 		}
 	}
+	else
+		return (print_string("(null)"));
 	return (count);
 }
 
@@ -27,7 +29,7 @@ int print_string(char *s)
  * Return: Number of characters
  */
 
-int print_integer(int i)
+int print_integer(long int i)
 {
 	int count = 0;
 
